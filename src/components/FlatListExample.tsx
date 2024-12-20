@@ -1,5 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {
+  Alert,
+  FlatList,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
 type ItemProps = {
   item: {
@@ -39,7 +46,8 @@ const FlatListExample: React.FC = () => {
       const response = await fetch(
         'https://jsonplaceholder.typicode.com/todos',
       );
-      const json = await response.json();
+      const json : ItemData[] = await response.json();
+      // console.log(json);
       setData(json);
       setRefreshing(false);
     } catch (error) {
@@ -65,6 +73,7 @@ const FlatListExample: React.FC = () => {
         refreshing={refreshing}
         progressViewOffset={350}
         removeClippedSubviews
+        onEndReached={() => Alert.alert('End of list')}
       />
     </SafeAreaView>
   );
