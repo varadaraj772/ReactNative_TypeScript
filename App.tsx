@@ -9,6 +9,7 @@ import FlatListExample from './src/components/FlatListExample';
 import ModalComponent from './src/components/ModalComponent';
 import BasicAnimations from './src/components/BasicAnimations';
 import AnimationInterpolation from './src/components/AnimationInterpolation';
+import DragAnimation from './src/components/DragAnimation';
 const App: React.FC = () => {
   return (
     <>
@@ -19,7 +20,8 @@ const App: React.FC = () => {
       {/* <FlatListExample /> */}
       {/* <ModalComponent /> */}
       {/* <BasicAnimations /> */}
-      <AnimationInterpolation/>
+      {/* <AnimationInterpolation/> */}
+      <DragAnimation/>
     </>
   );
 };
