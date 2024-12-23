@@ -7,6 +7,8 @@ import BottomNavigation from './src/components/BottomNavigation';
 import DrawerNavigation from './src/components/DrawerNavigation';
 import FlatListExample from './src/components/FlatListExample';
 import ModalComponent from './src/components/ModalComponent';
+import BasicAnimations from './src/components/BasicAnimations';
+import AnimationInterpolation from './src/components/AnimationInterpolation';
 const App: React.FC = () => {
   return (
     <>
@@ -14,8 +16,10 @@ const App: React.FC = () => {
       {/* <StackNavigation /> */}
       {/* <BottomNavigation /> */}
       {/* <DrawerNavigation/> */}
-      <FlatListExample />
+      {/* <FlatListExample /> */}
       {/* <ModalComponent /> */}
+      {/* <BasicAnimations /> */}
+      <AnimationInterpolation/>
     </>
   );
 };
