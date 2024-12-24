@@ -22,14 +22,14 @@ const DragAnimation = () => {
       onPanResponderStart: () => {
         Animated.timing(ScaleAnimation, {
           toValue: 1.3,
-          duration: 400,
+          duration: 200,
           useNativeDriver: false,
         }).start();
       },
       onPanResponderRelease: () => {
         Animated.timing(ScaleAnimation, {
           toValue: 0.5,
-          duration: 500,
+          duration: 300,
           useNativeDriver: false,
         }).start();
       },

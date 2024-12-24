@@ -10,6 +10,7 @@ import ModalComponent from './src/components/ModalComponent';
 import BasicAnimations from './src/components/BasicAnimations';
 import AnimationInterpolation from './src/components/AnimationInterpolation';
 import DragAnimation from './src/components/DragAnimation';
+import RootNavigator from './src/Redux/RootNavigator';
 const App: React.FC = () => {
   return (
     <>
@@ -21,7 +22,8 @@ const App: React.FC = () => {
       {/* <ModalComponent /> */}
       {/* <BasicAnimations /> */}
       {/* <AnimationInterpolation/> */}
-      <DragAnimation/>
+      {/* <DragAnimation/> */}
+      <RootNavigator />
     </>
   );
 };
